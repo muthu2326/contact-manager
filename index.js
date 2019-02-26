@@ -1,5 +1,4 @@
 const express = require('express')
-const port = 3005
 const app = express()
 const {mongoose} = require('./config/database')
 const {contactRouter} = require('./app/controllers/ContactsController')
@@ -12,7 +11,7 @@ app.use('/contacts',contactRouter)
 
 app.use('/notes',noteRouter)
 
-app.listen(port,function(){
+app.listen(process.env.PORT || 3000,function(){
     console.log('listening ports', port)
 })  
     //NOSQL Terminolgies
