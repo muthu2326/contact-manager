@@ -1,6 +1,5 @@
 const mongoose = require('mongoose')
 const mongodb = require('mongodb');
-var MongoClient= mongodb.MongoClient;
 var URL = 'mongodb://127.0.0.1:27017/contact-manager-jan';
 
 // DB Configuration
