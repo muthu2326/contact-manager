@@ -12,7 +12,7 @@ app.use('/contacts',contactRouter)
 app.use('/notes',noteRouter)
 
 app.listen(process.env.PORT || 3000,function(){
-    console.log('listening ports', port)
+    console.log('listening ports')
 })  
     //NOSQL Terminolgies
     //database 
