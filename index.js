@@ -7,8 +7,6 @@ const {noteRouter} = require('./app/controllers/NotesController')
 
 app.use(express.json())
 
-app.use('/',contactRouter)
-
 app.use('/contacts',contactRouter)
 
 app.use('/notes',noteRouter)

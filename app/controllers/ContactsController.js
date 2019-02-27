@@ -3,9 +3,9 @@ const router = express.Router()
 const {Contact} = require('../models/Contact')
 
 
-router.get('/', function(req,res){ 
-   res.send('Welcome connected to DB')
-})
+// router.get('/', function(req,res){ 
+//    res.send('Welcome connected to DB')
+// })
  //   will return all the documents in the collection  - model
  router.get('/', function(req,res){ 
      Contact.find()              // Database query  - not AJAX request - returns promises
