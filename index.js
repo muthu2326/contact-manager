@@ -14,14 +14,14 @@ app.use('/contacts',contactRouter)
 
 app.use('/notes',noteRouter)
 
-app.listen(3000,  function(){
-    console.log('listening port', 3000)
-})
+// app.listen(3000,  function(){
+//     console.log('listening port', 3000)
+// })
 
-// const PORT = process.env.PORT || 5000;
-// app.listen(5000, function(){
-//     console.log('listening ports')
-// })  
+const PORT = process.env.PORT || 5000;
+app.listen(5000, function(){
+    console.log('listening ports')
+})  
     //NOSQL Terminolgies
     //database 
     //collection - collection of documents
