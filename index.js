@@ -17,7 +17,8 @@ app.use('/notes',noteRouter)
 // app.listen(3000,  function(){
 //     console.log('listening port', 3000)
 // })
-app.listen(process.env.PORT || 5000,function(){
+const PORT = process.env.PORT || 5000;
+app.listen(PORT,function(){
     console.log('listening ports')
 })  
     //NOSQL Terminolgies
