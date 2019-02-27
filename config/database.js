@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 const mongodb = require('mongodb'); 
-const CONNECTION_URI = 'mongodb+srv://muthu:muthu@cluster0-kvmls.mongodb.net/contacts?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin';
+const CONNECTION_URI = 'mongodb+srv://muthu:muthu@cluster0-kvmls.mongodb.net/contact-manager?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin';
 
 // const CONNECTION_URI = process.env.MONGODB_URI || 'mongodb://localhost:27017/contact-manager-jan'
 
