@@ -2,7 +2,7 @@ const mongoose = require('mongoose')
 const mongodb = require('mongodb'); 
 //const CONNECTION_URI = 'mongodb+srv://muthu:muthu@cluster0-kvmls.mongodb.net/contact-manager?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin';
 
-const CONNECTION_URI = 'mongodb://muthu:muthu@cluster0-shard-00-00-kvmls.mongodb.net:27017,cluster0-shard-00-01-kvmls.mongodb.net:27017,cluster0-shard-00-02-kvmls.mongodb.net:27017/test?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin&retryWrites=true'
+const CONNECTION_URI = 'mongodb://muthu:muthu@cluster0-shard-00-00-kvmls.mongodb.net:27017,cluster0-shard-00-01-kvmls.mongodb.net:27017,cluster0-shard-00-02-kvmls.mongodb.net:27017/contact-manager?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin&retryWrites=true'
 
 // const CONNECTION_URI = process.env.MONGODB_URI || 'mongodb://localhost:27017/contact-manager-jan'
 
