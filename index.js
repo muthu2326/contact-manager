@@ -3,9 +3,12 @@ const app = express()
 const {mongoose} = require('./config/database')
 const {contactRouter} = require('./app/controllers/ContactsController')
 const {noteRouter} = require('./app/controllers/NotesController')
+const {welcomeRouter} = require('./app/controllers/welcome')
 
 
 app.use(express.json())
+
+app.use('/', welcomeRouter)
 
 app.use('/contacts',contactRouter)
 
