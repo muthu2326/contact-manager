@@ -9,9 +9,11 @@ app.use(express.json())
 
 app.use('/',contactRouter)
 
+app.use('/contacts',contactRouter)
+
 app.use('/notes',noteRouter)
 
-app.listen(process.env.PORT || 3000,function(){
+app.listen(process.env.PORT || 5000,function(){
     console.log('listening ports')
 })  
     //NOSQL Terminolgies
