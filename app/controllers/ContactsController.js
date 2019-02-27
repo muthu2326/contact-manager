@@ -25,7 +25,7 @@ router.post('/',function(req,res){
         .then(function(contact){
             res.send(contact)
         })
-        .catch(function(){
+        .catch(function(err){
             res.send(err)
         })
 })
