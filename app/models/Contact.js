@@ -16,6 +16,11 @@ const contactSchema = new Schema({  // passing an object as parameter to send mu
         minlength: 10,
         maxlength: 10
     },
+    user: {
+        type: Schema.Types.ObjectId,
+        ref: 'User'
+    }
+
 })      // node-express way of creating an object
 
 const Contact = mongoose.model('Contact',contactSchema) 

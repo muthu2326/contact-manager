@@ -4,7 +4,7 @@ const {mongoose} = require('./config/database')
 const {contactRouter} = require('./app/controllers/ContactsController')
 const {noteRouter} = require('./app/controllers/NotesController')
 const {welcomeRouter} = require('./app/controllers/welcome')
-
+const { usersRouter } = require('./app/controllers/UsersController')
 
 app.use(express.json())
 
@@ -14,13 +14,15 @@ app.use('/contacts',contactRouter)
 
 app.use('/notes',noteRouter)
 
+app.use('/users',usersRouter)
+
 // app.listen(3000,  function(){
 //     console.log('listening port', 3000)
 // })
 
-const PORT = process.env.PORT || 5000;
-app.listen(PORT, function(){
-    console.log('listening ports')
+const port = process.env.PORT || 3005;
+app.listen(port, function(){
+    console.log('listening ports', port)
 })  
     //NOSQL Terminolgies
     //database 
